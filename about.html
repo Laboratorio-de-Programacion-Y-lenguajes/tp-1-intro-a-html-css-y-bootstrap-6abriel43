@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de mí - Mi Blog</title>
+    <title>Mi Blog Personal</title>
+    <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
-    <!-- Navbar (copiar de index.html) -->
+    <!-- Navbar (COMPLETAR: agregar logo, links activos, menú colapsable) -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+            <!-- TODO: agregar toggler y nav-items -->
         </div>
     </nav>
 
-    <!-- Contenido -->
+    <!-- Hero section -->
+    <header class="bg-gradient text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Bienvenido a Mi Blog</h1>
+            <p class="lead">Historias, tecnología y reflexiones</p>
+        </div>
+    </header>
+
+    <!-- Main: listado de artículos -->
     <main class="py-5">
         <div class="container">
-            <div class="row">
-                <!-- Sidebar: Avatar (COMPLETAR) -->
-                <aside class="col-md-3 mb-4">
-                    <img src="assets/images/avatar.jpg" class="img-fluid rounded-circle mb-3" alt="Avatar" style="max-width: 200px;">
-                    <h3>Tu Nombre</h3>
-                    <p class="text-muted">Desarrollador web &amp; escritor</p>
-                </aside>
+            <h2 class="mb-4">Artículos Recientes</h2>
 
-                <!-- Contenido principal (COMPLETAR) -->
-                <article class="col-md-9">
-                    <h1>Acerca de mí</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <!-- TODO: agregar más párrafos, habilidades, etc. -->
-                </article>
+            <!-- Grid de tarjetas (COMPLETAR: 3+ artículos) -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/article-1.jpg" class="card-img-top" alt="Artículo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Primer Artículo</h5>
+                            <p class="card-text text-muted">Autor: Tu Nombre</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO: agregar 2 más -->
             </div>
         </div>
     </main>
@@ -39,10 +54,13 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; 2026 Mi Blog.</p>
+            <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
+            <!-- TODO: agregar redes sociales -->
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

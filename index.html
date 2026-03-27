@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Blog Personal</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/images/favicon.ico">
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
     <!-- Navbar (COMPLETAR: agregar logo, links activos, menú colapsable) -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
-            <!-- TODO: agregar toggler y nav-items -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero section -->
     <header class="bg-gradient text-white py-5">
         <div class="container text-center">
-            <h1 class="display-4">Bienvenido a Mi Blog</h1>
-            <p class="lead">Historias, tecnología y reflexiones</p>
+            <h1 class="display-4">Bienvenido a Mi Blog Personal</h1>
+            <p class="lead">Ademas de una trabajo practico, es un espacio donde comparto lo que estoy aprendiendo sobre el estudio, programacion y tecnologia</p>
         </div>
     </header>
 
@@ -37,16 +57,43 @@
                     <div class="card h-100 shadow-sm">
                         <img src="assets/images/article-1.jpg" class="card-img-top" alt="Artículo 1">
                         <div class="card-body">
-                            <h5 class="card-title">Primer Artículo</h5>
-                            <p class="card-text text-muted">Autor: Tu Nombre</p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <h5 class="card-title">Como organizo mis estudios</h5>
+                            <p class="card-text text-muted">Autor: Gabriel - 6abriel43 en git </p>
+                            <p class="card-text">Comparto algunas formas que me ayudan a ordenar materias, trabajos y mi tiempo de estudio
+                            </p>
                             <a href="#" class="btn btn-primary btn-sm">Leer más</a>
                         </div>
                     </div>
                 </div>
                 <!-- TODO: agregar 2 más -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/article-2.jpg" class="card-img-top" alt="Pantalla con código HTML y CSS">
+                        <div class="card-body">
+                            <h5 class="card-title">Mis primeros pasos con HTML y CSS</h5>
+                            <p class="card-text text-muted">Autor: Gabriel :o</p>
+                            <p class="card-text">
+                                Una breve experiencia sobre cómo empecé a crear páginas web y qué fui aprendiendo en el proceso.
+                            </p>
+                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/article-3.jpg" class="card-img-top" alt="Escritorio con herramientas de programación">
+                        <div class="card-body">
+                            <h5 class="card-title">Herramientas que uso para programar</h5>
+                            <p class="card-text text-muted">Autor: Gabriel :l</p>
+                            <p class="card-text">
+                                Un repaso por algunas herramientas y programas que uso para estudiar, practicar y programar mejor.
+                            </p>
+                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+
     </main>
 
     <!-- Footer -->
@@ -54,10 +101,16 @@
         <div class="container text-center">
             <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
             <!-- TODO: agregar redes sociales -->
+            <p class="mb-0">
+                <a href="#" class="text-white">Instagram</a> |
+                <a href="#" class="text-white">GitHub</a> |
+                <a href="#" class="text-white">Steam :p</a>
+            </p>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
