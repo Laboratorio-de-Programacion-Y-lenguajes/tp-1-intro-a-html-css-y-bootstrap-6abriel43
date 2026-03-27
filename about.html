@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog Personal</title>
+    <title>Acerca de mi - Mi Blog Personal</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/images/favicon.ico">
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizado -->
@@ -16,37 +18,54 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+
             <!-- TODO: agregar toggler y nav-items -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero section -->
     <header class="bg-gradient text-white py-5">
         <div class="container text-center">
-            <h1 class="display-4">Bienvenido a Mi Blog</h1>
-            <p class="lead">Historias, tecnología y reflexiones</p>
+            <h1 class="display-4">Acerca de mi</h1>
+            <p class="lead">Un poco sobre quién soy y por qué hice este blog.</p>
         </div>
     </header>
 
-    <!-- Main: listado de artículos -->
     <main class="py-5">
         <div class="container">
-            <h2 class="mb-4">Artículos Recientes</h2>
-
-            <!-- Grid de tarjetas (COMPLETAR: 3+ artículos) -->
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="assets/images/article-1.jpg" class="card-img-top" alt="Artículo 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Primer Artículo</h5>
-                            <p class="card-text text-muted">Autor: Tu Nombre</p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
-                        </div>
-                    </div>
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-4 text-center">
+                    <img src="assets/images/avatar.jpg" alt="Foto o avatar del autor del blog" class="img-fluid rounded-circle shadow">
                 </div>
-                <!-- TODO: agregar 2 más -->
+                <div class="col-12 col-md-8">
+                    <h2>Hola, soy Gabriel Patricio Guitian</h2>
+                    <p>
+                        Soy estudiante de la Licenciatura en Sistemas y me gustar seguir aprendiendo sobre programación, desarrollo web y tecnología. Este blog lo hice como parte de una práctica con HTML, CSS y Bootstrap de la materia de laboratorio de 3er año.
+                    </p>
+                    <p>
+                        La idea de este espacio es compartir algunas cosas que voy aprendiendo, mis experiencias estudiando y también proyectos o herramientas que me resultan útiles.
+                    </p>
+                    <p>
+                        Además de cumplir con el trabajo práctico, quise que la página se vea ordenada, simple y fácil de navegar tanto en notebook como en celular.
+                    </p>
+                </div>
             </div>
         </div>
     </main>
@@ -56,6 +75,11 @@
         <div class="container text-center">
             <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
             <!-- TODO: agregar redes sociales -->
+            <p class="mb-0">
+                <a href="#" class="text-white">Instagram</a> |
+                <a href="#" class="text-white">GitHub</a> |
+                <a href="#" class="text-white">Steam :p</a>
+            </p>
         </div>
     </footer>
 
