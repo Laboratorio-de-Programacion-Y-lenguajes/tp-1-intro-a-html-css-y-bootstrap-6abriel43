@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Mi Blog</title>
+    <title>Contacto - Mi Blog Personal</title>
+    <link rel="icon" href="assets/images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
+    <header class="bg-gradient text-dark py-5">
+        <div class="container text-center">
+            <h1 class="display-5">Contacto</h1>
+            <p class="lead">Podés enviar un mensaje/consulta a través del formulario.</p>
+        </div>
+    </header>
 
     <!-- Formulario de contacto -->
     <main class="py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <h1 class="mb-4">Contacto</h1>
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h2 class="mb-4 text-center">Formulario de Contacto</h2>
 
-                    <form id="contactForm" novalidate>
+                    <form action="#" method="post" class="p-4 border rounded bg-light shadow-sm">
                         <!-- Campo nombre (COMPLETAR: validación) -->
                         <div class="mb-3">
                             <label for="name" class="form-label">Nombre *</label>
                             <input type="text" class="form-control" id="name" name="name" required>
-                            <div class="invalid-feedback">
-                                Por favor ingresa tu nombre.
-                            </div>
                         </div>
 
                         <!-- Campo email (COMPLETAR) -->
                         <div class="mb-3">
                             <label for="email" class="form-label">Email *</label>
                             <input type="email" class="form-control" id="email" name="email" required>
-                            <div class="invalid-feedback">
-                                Por favor ingresa un email válido.
-                            </div>
                         </div>
 
                         <!-- Campo teléfono (COMPLETAR: opcional) -->
@@ -51,9 +73,6 @@
                         <div class="mb-3">
                             <label for="message" class="form-label">Mensaje *</label>
                             <textarea class="form-control" id="message" name="message" rows="5" required minlength="10"></textarea>
-                            <div class="invalid-feedback">
-                                El mensaje debe tener al menos 10 caracteres.
-                            </div>
                         </div>
 
                         <!-- Botón submit -->
@@ -67,22 +86,16 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
-            <p>&copy; 2026 Mi Blog.</p>
+            <p>&copy; 2026 Mi Blog. Todos los derechos reservados</p>
+            <p class="mb-0">
+                <a href="#" class="text-white">Instagram</a> |
+                <a href="#" class="text-white">GitHub</a> |
+                <a href="#" class="text-white">LinkedIn</a>
+            </p>
         </div>
     </footer>
 
-    <!-- Script: validación HTML5 + feedback visual -->
-    <script>
-        const form = document.getElementById('contactForm');
-        form.addEventListener('submit', (e) => {
-            if (!form.checkValidity()) {
-                e.preventDefault();
-                e.stopPropagation();
-            }
-            form.classList.add('was-validated');
-        });
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
